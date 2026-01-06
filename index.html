@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大明王朝：歷史與文化學習站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto+Serif+TC', serif;
+            scroll-behavior: smooth;
+        }
+        .section-card {
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- 導航欄 -->
+    <nav class="bg-red-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold border-b-2 border-yellow-500">大明王朝學習站</h1>
+            <div class="space-x-4 hidden md:block">
+                <a href="#emperors" class="hover:text-yellow-400">歷代皇帝</a>
+                <a href="#culture" class="hover:text-yellow-400">文化藝術</a>
+                <a href="#food" class="hover:text-yellow-400">飲食文化</a>
+                <a href="#money" class="hover:text-yellow-400">貨幣制度</a>
+                <a href="#quiz" class="bg-yellow-600 px-3 py-1 rounded hover:bg-yellow-500 transition">知識測驗</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <header class="bg-cover bg-center h-80 flex items-center justify-center text-white relative" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1599572236599-c30362afbbd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="text-center">
+            <h2 class="text-5xl font-bold mb-4">治隆唐宋，遠邁漢唐</h2>
+            <p class="text-xl">探索十六帝的輝煌與末路，領略大明三百年風華</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <!-- 歷代皇帝區 -->
+        <section id="emperors" class="mb-20">
+            <h3 class="text-3xl font-bold mb-8 text-red-900 border-l-8 border-red-900 pl-4">明朝歷代皇帝（十六帝）</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- 皇帝簡介 -->
+                <div class="bg-white p-4 rounded shadow section-card border-t-4 border-red-800">
+                    <h4 class="font-bold text-lg">太祖 洪武 (朱元璋)</h4>
+                    <p class="text-sm text-gray-600">開國皇帝，廢丞相、設錦衣衛，建立高壓統治。</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow section-card border-t-4 border-red-800">
+                    <h4 class="font-bold text-lg">成祖 永樂 (朱棣)</h4>
+                    <p class="text-sm text-gray-600">遷都北京、編纂《永樂大典》、派鄭和下西洋。</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow section-card border-t-4 border-red-800">
+                    <h4 class="font-bold text-lg">孝宗 弘治 (朱祐樘)</h4>
+                    <p class="text-sm text-gray-600">歷史唯一一夫一妻皇帝，創「弘治中興」。</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow section-card border-t-4 border-red-800">
+                    <h4 class="font-bold text-lg">思宗 崇禎 (朱由檢)</h4>
+                    <p class="text-sm text-gray-600">末代皇帝，勤政多疑，最終自縊於煤山。</p>
+                </div>
+                <!-- 更多皇帝可在此補充 -->
+            </div>
+            <p class="mt-4 text-gray-500 italic">* 明朝共歷十六帝，從洪武開國到崇禎煤山自縊，國祚共276年。</p>
+        </section>
+
+        <!-- 文化藝術區 -->
+        <section id="culture" class="mb-20 bg-stone-100 p-8 rounded-xl shadow-inner">
+            <h3 class="text-3xl font-bold mb-8 text-red-900 border-l-8 border-red-900 pl-4">文化藝術：思想與工藝</h3>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1 space-y-4">
+                    <div class="bg-white p-6 rounded shadow">
+                        <h4 class="font-bold text-xl mb-2 text-yellow-700">心學崛起</h4>
+                        <p>王陽明提出「心學」，強調「致良知」與「知行合一」，衝擊了保守的程朱理學。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow">
+                        <h4 class="font-bold text-xl mb-2 text-yellow-700">俗文學巔峰</h4>
+                        <p>「四大奇書」奠定小說地位：《三國演義》、《水滸傳》、《西遊記》、《金瓶梅》。</p>
+                    </div>
+                </div>
+                <div class="flex-1 space-y-4">
+                    <div class="bg-white p-6 rounded shadow">
+                        <h4 class="font-bold text-xl mb-2 text-yellow-700">青花瓷與明式家具</h4>
+                        <p>宣德青花、成化鬥彩名揚中外；明式家具以線條優美、結構精巧著稱。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow text-center italic text-gray-500">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 飲食文化區 -->
+        <section id="food" class="mb-20">
+            <h3 class="text-3xl font-bold mb-8 text-red-900 border-l-8 border-red-900 pl-4">飲食：物種傳入與現代雛形</h3>
+            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-orange-200">
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-4">🌽</span>
+                        <div>
+                            <h5 class="font-bold">美洲作物引進</h5>
+                            <p>玉米、番薯（地瓜）、花生、馬鈴薯傳入，解決了溫飽問題。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-4">🌶️</span>
+                        <div>
+                            <h5 class="font-bold">辣椒的傳入</h5>
+                            <p>徹底改變了中國川菜、湘菜的風味基礎。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-4">🍵</span>
+                        <div>
+                            <h5 class="font-bold">飲茶革命</h5>
+                            <p>廢團茶、改散茶，奠定了現代沖泡茶葉的方式。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-4">🦆</span>
+                        <div>
+                            <h5 class="font-bold">經典美食</h5>
+                            <p>南京烤鴨隨遷都傳入北京，演變成著名的北京烤鴨。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 貨幣制度 -->
+        <section id="money" class="mb-20">
+            <h3 class="text-3xl font-bold mb-8 text-red-900 border-l-8 border-red-900 pl-4">幣制：從紙幣到白銀帝國</h3>
+            <div class="bg-red-50 p-8 rounded-xl border border-red-200">
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-2">1. 大明通行寶鈔的失敗</h4>
+                        <p>初期強推紙幣，但不允許兌換金銀，導致劇烈通膨，最終形同廢紙。</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-2">2. 白銀合法化</h4>
+                        <p>民間拒用紙幣而選用白銀。萬曆時期「一條鞭法」規定賦稅一律折銀徵收，白銀正式成為主要貨幣。</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">3. 全球貿易節點</h4>
+                        <p>絲綢與瓷器換取了世界各地的白銀（西班牙大帆船貿易），明朝成為白銀流入重心。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 測驗區 -->
+        <section id="quiz" class="mb-20">
+            <h3 class="text-3xl font-bold mb-8 text-red-900 border-l-8 border-red-900 pl-4 text-center">大明歷史知識力測驗</h3>
+            <div class="bg-white p-8 rounded-xl shadow-2xl max-w-2xl mx-auto" id="quiz-container">
+                <div id="quiz-intro" class="text-center">
+                    <p class="mb-6">您準備好檢驗學習成果了嗎？共有 10 題選擇題。</p>
+                    <button onclick="startQuiz()" class="bg-red-900 text-white px-8 py-3 rounded-full hover:bg-red-800 font-bold transition">開始測驗</button>
+                </div>
+                <div id="quiz-content" class="hidden">
+                    <div class="mb-4 text-gray-500 font-bold" id="question-number">第 1 題 / 10</div>
+                    <h4 id="question-text" class="text-xl font-bold mb-6"></h4>
+                    <div id="options-container" class="space-y-3">
+                        <!-- 選項會動態產生 -->
+                    </div>
+                </div>
+                <div id="quiz-result" class="hidden text-center">
+                    <h4 class="text-2xl font-bold mb-4">測驗完成！</h4>
+                    <p id="score-text" class="text-5xl font-bold text-red-900 mb-6"></p>
+                    <button onclick="location.reload()" class="bg-gray-200 text-gray-800 px-6 py-2 rounded hover:bg-gray-300">重新挑戰</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>© 2025 大明王朝歷史研究組 - 讓歷史更有趣</p>
+        </div>
+    </footer>
+
+    <script>
+        const questions = [
+            { q: "明朝第一位皇帝（太祖）是誰？", a: ["朱棣", "朱元璋", "朱高熾", "朱厚照"], correct: 1 },
+            { q: "哪位皇帝在位期間派遣鄭和下西洋、遷都北京並編纂《永樂大典》？", a: ["洪武帝", "永樂帝", "宣德帝", "崇禎帝"], correct: 1 },
+            { q: "明朝唯一的「一夫一妻」皇帝是哪一位？", a: ["明英宗", "明神宗", "明孝宗", "明光宗"], correct: 2 },
+            { q: "提出「心學」，主張知行合一的思想家是誰？", a: ["朱熹", "張居正", "王陽明", "湯顯祖"], correct: 2 },
+            { q: "下列哪一項不是明朝時期引進的美洲作物？", a: ["辣椒", "玉米", "番薯", "小麥"], correct: 3 },
+            { q: "明朝廢除「團茶」改飲「散茶」，這對哪種文化產生深遠影響？", a: ["酒文化", "茶文化", "服飾文化", "科舉文化"], correct: 1 },
+            { q: "明朝初期發行但後來因劇烈通貨膨脹而失效的紙幣稱為？", a: ["大明通行寶鈔", "交子", "會子", "交鈔"], correct: 0 },
+            { q: "萬曆時期推行「一條鞭法」改革，規定賦稅以什麼方式徵收？", a: ["布匹", "糧食", "白銀", "黃金"], correct: 2 },
+            { q: "《牡丹亭》是明代哪種戲曲藝術的巔峰代表作？", a: ["京劇", "崑曲", "越劇", "豫劇"], correct: 1 },
+            { q: "明朝最後一位在煤山自縊的皇帝年號為何？", a: ["天啟", "萬曆", "崇禎", "泰昌"], correct: 2 }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-content').classList.remove('hidden');
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const q = questions[currentQuestion];
+            document.getElementById('question-number').innerText = `第 ${currentQuestion + 1} 題 / 10`;
+            document.getElementById('question-text').innerText = q.q;
+            
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            q.a.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 border rounded-lg hover:bg-red-50 hover:border-red-900 transition";
+                btn.innerText = opt;
+                btn.onclick = () => selectOption(idx);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function selectOption(idx) {
+            if (idx === questions[currentQuestion].correct) {
+                score++;
+            }
+            
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.getElementById('quiz-content').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('score-text').innerText = `${score} / 10`;
+        }
+    </script>
+</body>
+</html>
